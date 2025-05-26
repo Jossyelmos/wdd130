@@ -15,21 +15,55 @@
     --body-font: "Roboto", sans-serif;
 }
 
-header {
-    color: var(--accent2-color);
-}
-
-
-body {
-  font-family: var(--body-font);
-  color: var(--grey-color);
-}
-
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
+header {
+  margin: 0.5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color: var(--accent2-color);
+}
+
+.logo-div img {
+  margin: 0 0.25rem 0 1rem;
+	width: 150px;
+	height: auto;
+}
+
+.navigation {
+  display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.navigation li {
+	flex: 1 1 auto;
+}
+
+.navigation a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--grey-color);
+}
 
 h1, h2 {
   font-family: var(--heading-font);
@@ -41,9 +75,9 @@ nav, section, article {
   padding: 8px;
 }
 
-.socialmedia a {
+/* .socialmedia a {
     text-decoration: none;
-}
+} */
 
 .hero {
   position: relative;
@@ -68,9 +102,9 @@ h1 {
 
 article {
     position: absolute;
-    width: 85%;
+    width: 95%;
     bottom: 45px;
-    left: 50px;
+    left: 7px;
     background-color: #3E5E87;
     opacity: 0.7;
 }
@@ -84,4 +118,63 @@ article p {
 .hero article img {
   float: right;
   width: 125px;
+}
+
+section h2{
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.history {
+  /* position: relative; */
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+}
+
+.history-grid img {
+  padding: 0 1rem;
+	width: 275px;
+	height: auto;
+}
+
+.history-grid p {
+  width: 275px;
+}
+
+.adventure-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content:space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.adventure-grid img {
+  width: 150px;
+  height: auto;
+}
+
+footer {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+footer nav {
+  position: absolute;
+  right: 20px;
+  margin: 0;
+}
+
+footer nav img {
+  width: 30px;
+  margin-left: 3px;
 }
