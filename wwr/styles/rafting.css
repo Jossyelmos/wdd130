@@ -75,10 +75,6 @@ nav, section, article {
   padding: 8px;
 }
 
-/* .socialmedia a {
-    text-decoration: none;
-} */
-
 .hero {
   position: relative;
 }
@@ -123,10 +119,6 @@ article p {
 section h2{
   padding-bottom: 10px;
   text-align: center;
-}
-
-.history {
-  /* position: relative; */
 }
 
 .history-grid {
