@@ -10,6 +10,7 @@
     --accent1-color: #A33E3E;
     --accent2-color: #D3D5D7;
     --dark-color: #000;
+    --light-grey: #EDF0F4;
     --grey-color: #5F6368;
     --heading-font: "Monteserrat", sans-serif;
     --body-font: "Roboto", sans-serif;
@@ -85,7 +86,7 @@ nav, section, article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -160,6 +161,10 @@ footer {
   margin-top: 3rem;
 }
 
+footer p a {
+  text-decoration: none;
+}
+
 footer nav {
   position: absolute;
   right: 20px;
@@ -169,4 +174,196 @@ footer nav {
 footer nav img {
   width: 30px;
   margin-left: 3px;
+}
+
+/* Contact Page css */
+.contact-hero {
+  position: relative;
+  background-color: var(--light-grey);
+  height: 230px;
+}
+
+.contact-hero-head {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  transform: translateY(-50%);
+}
+
+.contact-hero-head p {
+  width: 400px;
+  margin: 0 auto;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.contact-team-grid {
+  position: relative;
+  top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content:space-around;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact-team-grid img{
+  width: 250px;
+  border-radius: 5px;
+}
+
+.address-container {
+  position: relative;
+  margin-top: 12rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.address-info {
+  position: relative;
+  top: 2rem;
+  padding: 2rem;
+}
+
+address {
+  width: 100%;
+}
+
+.address-info h3{
+  margin-bottom: 3rem;
+}
+
+.address-info h4 {
+  margin-bottom: 10px;
+}
+
+address p {
+  padding: .5rem 0;
+  font-size: 15px;
+}
+
+address a {
+  text-decoration: none;
+}
+
+.address-container nav {
+  position: absolute;
+  top: 17rem;
+  margin: 0;
+  padding: 0;
+}
+
+.address-container nav img {
+  margin-top: 3rem;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.map iframe {
+  border: none;
+}
+
+.form {
+  position: relative;
+  background-color: var(--light-grey);
+  margin: 0 auto;
+  margin: 3rem 0;
+}
+
+.form h3 {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: 1.5em;
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+  text-align: center;
+}
+
+.form p {
+  width: 350px;
+  margin: 0 auto;
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: grid;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  max-width: 100%;
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+  justify-content: stretch;
+  padding-right: 10px;
+}
+
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: none;
+  padding: 1rem;
+}
+
+label, input, button, textarea {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 600;
+}
+
+label {
+  padding-right: .11rem;
+  padding-bottom: .5rem;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: .8rem;
+  font-weight: normal;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+.radio {
+  display: flex;
+  margin: 1rem;
+}
+
+.column1 {
+  margin-right: 20px;
+}
+
+button {
+  margin: 1rem;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: darkgreen;
 }
