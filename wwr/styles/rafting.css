@@ -16,6 +16,271 @@
     --body-font: "Roboto", sans-serif;
 }
 
+body {
+  font-family: var(--body-font);
+  color: var(--grey-color);
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+/* Home page css */
+
+/* .bg {
+  position: relative;
+  top: -.7rem;
+  left: 50%;
+  background-image: url("../images/home-hero.webp");
+  width: 100vw;
+  height: 80vh;
+  transform: translateX(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .9;
+} */
+
+.btn {
+  margin: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: navy;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: darkgreen;
+}
+
+.home {
+  position: relative;
+}
+
+.home .hero img {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  left: 50%; 
+  transform: translateX(-50%);
+  opacity: .9;
+}
+
+.home .hero h1 {
+  top: 9rem;
+  background-color: transparent;
+  font-size: 3.5rem;
+  opacity: 1;
+  letter-spacing: 1px;
+}
+
+.home .hero article {
+    bottom: 6rem;
+    padding: 1rem;
+    background-color: transparent;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home article h3 {
+  width: 88%;
+  padding-bottom: 1rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+article button {
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+}
+
+article button a {
+  text-decoration: none;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding-right: 1rem;
+  justify-content: space-around;
+}
+
+.grid section {
+  width: 550px;
+}
+
+.grid section h2{
+  text-align: start;
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.grid section h4 {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 2rem;
+}
+
+.grid section h5 {
+  margin-bottom: 8px;
+}
+
+.grid section p {
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--grey-color);
+  opacity: .9;
+  line-height: 1.4rem;
+}
+
+.grid aside {
+  width: 300px;
+  margin-top: 2rem;
+}
+
+.grid aside h3 {
+  margin: 1.5rem 0;
+  opacity: 1;
+  color: var(--accent1-color);
+}
+
+.grid .rates p {
+  margin-bottom: .6rem;
+  font-size: 0.85rem;
+  color: var(--grey-color);
+  opacity: .9;
+}
+
+.grid .rates button {
+  /* background-color: #EAC020; */
+  border-radius: 25px;
+  margin: 2rem 0;
+  padding: 1rem 1.7rem;
+  font-size: .7rem;
+  cursor: pointer;
+}
+
+.grid .rates button:hover {
+  background-color: darkgreen;
+}
+
+.grid .details p {
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: var(--grey-color);
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.grid .details span {
+  font-weight: normal;
+  opacity: .9;
+}
+
+.grid aside .form {
+  background-color: transparent;
+  margin: 0;
+  margin: 3rem 0 0 0;
+}
+
+.grid aside .form h3 {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 1.1em;
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+  text-align: start;
+}
+
+.grid aside .form p {
+  max-width: 100%;
+  font-size: 0.85rem;
+  padding-bottom: 0;
+  opacity: .9;
+}
+
+.grid aside form {
+  width: 100%;
+  margin: 0;
+  padding: 0rem;
+  display: block;
+}
+
+.grid aside .user {
+  display: block;
+}
+
+.grid aside .form-item {
+  padding-bottom: 10px;
+}
+
+.grid aside fieldset {
+  display: block;
+  margin: 1rem 0 0 0;
+  border: none;
+  padding: 0;
+}
+
+.grid aside .form button {
+  margin: 0;
+  cursor: pointer;
+}
+
+.grid aside .form a {
+  text-decoration: none;
+}
+
+.home-div {
+  text-align: center;
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
+  padding: 2rem 0;
+}
+
+.home-div h2 {
+  margin: 2rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content:space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-2 img {
+  width: 250px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.grid-2 figcaption {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.grid-2 button {
+  padding: 1rem;
+  /* background-color: #EAC020; */
+  border-radius: 0;
+  cursor: pointer;
+}
+
 header, main, footer {
   width: 840px;
   margin: 0 auto;
@@ -61,17 +326,7 @@ header {
 	text-decoration: underline;
 }
 
-body {
-  font-family: var(--body-font);
-  color: var(--grey-color);
-}
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--accent1-color);
-}
-
-nav, section, article {
+nav, section, aside, article {
   margin: 16px;
   padding: 8px;
 }
@@ -94,7 +349,7 @@ nav, section, article {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+  color: #fff; 
 }
 
 article {
