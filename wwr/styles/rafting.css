@@ -108,132 +108,60 @@ article button a {
 }
 
 .grid {
+  margin: 4rem 0;
   display: grid;
   grid-template-columns: 70% 30%;
-  padding-right: 1rem;
+  padding: 16px;
   justify-content: space-around;
+  border-bottom: 1px solid var(--light-grey);
 }
 
-.grid section {
-  width: 550px;
+.grid img {
+  width: 700px;
 }
 
-.grid section h2{
-  text-align: start;
-  margin: 2rem 0;
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.grid section h4 {
-  margin-bottom: 2rem;
-  font-size: 1.4rem;
-  font-weight: normal;
-  line-height: 2rem;
-}
-
-.grid section h5 {
-  margin-bottom: 8px;
-}
-
-.grid section p {
-  margin-bottom: 1.5rem;
-  font-size: 0.85rem;
-  color: var(--grey-color);
-  opacity: .9;
-  line-height: 1.4rem;
-}
-
-.grid aside {
-  width: 300px;
-  margin-top: 2rem;
-}
-
-.grid aside h3 {
-  margin: 1.5rem 0;
-  opacity: 1;
-  color: var(--accent1-color);
-}
-
-.grid .rates p {
-  margin-bottom: .6rem;
-  font-size: 0.85rem;
-  color: var(--grey-color);
-  opacity: .9;
-}
-
-.grid .rates button {
-  /* background-color: #EAC020; */
-  border-radius: 25px;
-  margin: 2rem 0;
-  padding: 1rem 1.7rem;
-  font-size: .7rem;
-  cursor: pointer;
-}
-
-.grid .rates button:hover {
-  background-color: darkgreen;
-}
-
-.grid .details p {
-  margin-bottom: 1rem;
-  font-size: 0.85rem;
-  color: var(--grey-color);
-  font-weight: 700;
-  line-height: 1.5rem;
-}
-
-.grid .details span {
-  font-weight: normal;
-  opacity: .9;
-}
-
-.grid aside .form {
-  background-color: transparent;
+.grid .form {
   margin: 0;
-  margin: 3rem 0 0 0;
+  margin: 4rem 0 2rem;
 }
 
-.grid aside .form h3 {
-  padding-top: 0;
-  padding-bottom: 0;
+.grid .form h3 {
+  padding: 13px;
   font-size: 1.1em;
   font-family: var(--heading-font);
   color: var(--accent1-color);
   text-align: start;
 }
 
-.grid aside .form p {
-  max-width: 100%;
-  font-size: 0.85rem;
-  padding-bottom: 0;
+.grid .form p {
+  max-width: 88%;
+  font-size: 0.8rem;
   opacity: .9;
 }
 
-.grid aside form {
+.grid form {
   width: 100%;
   margin: 0;
-  padding: 0rem;
   display: block;
 }
 
-.grid aside .user {
+.grid .user {
   display: block;
 }
 
-.grid aside .form-item {
+.grid .form-item {
   padding-bottom: 10px;
 }
 
-.grid aside fieldset {
+.grid fieldset {
   display: block;
   margin: 1rem 0 0 0;
   border: none;
   padding: 0;
 }
 
-.grid aside .form button {
-  margin: 0;
+.grid .form button {
+  margin: 1rem 0;
   cursor: pointer;
 }
 
@@ -243,7 +171,6 @@ article button a {
 
 .home-div {
   text-align: center;
-  border-top: 1px solid var(--light-grey);
   border-bottom: 1px solid var(--light-grey);
   padding: 2rem 0;
 }
@@ -276,7 +203,6 @@ article button a {
 
 .grid-2 button {
   padding: 1rem;
-  /* background-color: #EAC020; */
   border-radius: 0;
   cursor: pointer;
 }
@@ -326,7 +252,7 @@ header {
 	text-decoration: underline;
 }
 
-nav, section, aside, article {
+nav, section, aside, article, table {
   margin: 16px;
   padding: 8px;
 }
@@ -620,4 +546,220 @@ button {
 
 button:hover {
   background-color: darkgreen;
+}
+
+
+
+/* Trips Css layout */
+.trips {
+  position: relative;
+}
+
+.trips .hero h1 {
+  top: 9rem;
+  background-color: transparent;
+  font-size: 3rem;
+  opacity: 1;
+  letter-spacing: 1px;
+}
+
+.trips .hero article {
+    bottom: 6rem;
+    padding: 1rem;
+    background-color: transparent;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trips article h3 {
+  width: 70%;
+  padding-bottom: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+article button {
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+}
+
+article button a {
+  text-decoration: none;
+  color: white;
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding-right: 1rem;
+  justify-content: space-around;
+}
+
+.trips-grid section {
+  width: 550px;
+}
+
+.trips-grid section h2{
+  text-align: start;
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.trips-grid section h4 {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 2rem;
+}
+
+.trips-grid section h5 {
+  margin-bottom: 8px;
+}
+
+.trips-grid section p {
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--grey-color);
+  opacity: .9;
+  line-height: 1.4rem;
+}
+
+.trips-grid aside {
+  width: 300px;
+  margin-top: 2rem;
+}
+
+.trips-grid aside h3 {
+  margin: 1.5rem 0;
+  opacity: 1;
+  color: var(--accent1-color);
+}
+
+.trips-grid .rates p {
+  margin-bottom: .6rem;
+  font-size: 0.85rem;
+  color: var(--grey-color);
+  opacity: .9;
+}
+
+.trips-grid .rates button {
+  border-radius: 25px;
+  margin: 2rem 0;
+  padding: 1rem 1.7rem;
+  font-size: .7rem;
+  cursor: pointer;
+}
+
+.trips-grid .rates button:hover {
+  background-color: darkgreen;
+}
+
+.trips-grid .details p {
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: var(--grey-color);
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.trips-grid .details span {
+  font-weight: normal;
+  opacity: .9;
+}
+
+.trips-div {
+  text-align: center;
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
+  padding: 2rem 0;
+}
+
+.trips-div h2 {
+  margin: 2rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content:space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-2 img {
+  width: 250px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.grid-2 figcaption {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.grid-2 button {
+  padding: 1rem;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+table {
+  margin: 0 auto;
+  width: 90%;
+  height: 400px;
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: top;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 2rem;
+  color: var(--accent1-color);
+}
+
+thead th {
+  background-color: #000; /* This is shorthand HEX notation for #000000 */
+  color: #fff;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+  text-align: center;
+}
+
+td:last-of-type {
+  /* text-align: center; */
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
 }
